@@ -1,0 +1,35 @@
+* { box-sizing: border-box }
+
+.comment > * {
+	display: none;
+}
+
+.comment {
+    width: 100px;
+    height: 100px;
+    background: paleturquoise;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.circle > .content {
+    padding: 14.644660940672626% /* (1 - (1 / (sqrt(2)))) / 2 science bitches */
+}
+
+.comment-content {
+    width: 600px;
+    height: 600px;
+    background: powderblue;
+}
+
+.response {
+    width: 100px;
+    height: 100px;
+    background: aliceblue;
+}
+
+.response > * {
+	display: none;
+}

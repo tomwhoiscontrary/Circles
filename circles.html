@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="circles.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="jquery.fancybox.css">
+	<script type="text/javascript" src="jquery.fancybox.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".comment").fancybox({
+		        padding: 0,
+		        tpl: {
+					wrap: '<div class="fancybox-wrap" tabIndex="-1"><div><div class="fancybox-outer"><div class="fancybox-inner"></div></div></div></div>',
+		        }
+			});
+			$(document).tooltip({
+				items: ".response",
+				content: function(yield) {
+					yield(this.getElementsByClassName('content')[0].textContent);
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div class="comment circle" id="c1" href="#c1-content">
+		<div class="comment-content circle" id="c1-content">
+			<div class="content">
+				<div class="comment-text">It's not the size mate, it's how you use it. i want to shoot the pigeons... off my roof. yes, i used a machine gun. jasper: your baby is the miracle the whole world has been waiting for.</div>
+				<div class="responses">
+					<div class="response circle" title="#c1r1-content"><div class="content" id="c1r1-content">My name is Michael Caine.</div></div>
+					<div class="response circle" title="#c1r2-content"><div class="content" id="c1r2-content">You were only supposed to blow the bloody doors off!</div></div>
+					<div class="response circle" title="#c1r3-content"><div class="content" id="c1r3-content">Hang on, I've got an idea.</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="comment circle" id="c2" href="#c2-content">
+		<div class="comment-content circle" id="c2-content">
+			<div class="content">
+				<div class="comment-text">Here. put that in your report!" and "i may have found a way out of here. well, do you have anything to say for yourself? you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. don't p!ss down my back and tell me it's raining.</div>
+				<div class="responses">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="comment circle" id="c3" href="#c3-content">
+		<div class="comment-content circle" id="c3-content">
+			<div class="content">
+				<div class="comment-text">You got the wrong guy, ace! i thought about you every time i jerked off, dickhead. what do you want me to say, that i'm sorry? that i apologize? well, people in hell want ice water, pal.</div>
+				<div class="responses">
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
